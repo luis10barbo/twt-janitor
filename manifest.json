@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "twtjanitor",
+  "version": "1.0",
+
+  "description": "Cleans your twitter comments page from suspicious or bot accounts",
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*", "*://*.x.com/*"],
+      "js": ["twtjanitor.js"]
+    }
+  ]
+}
